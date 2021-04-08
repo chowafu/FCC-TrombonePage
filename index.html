@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        #header {
+            display: flex;
+            position: fixed;
+            top: 0;
+        }
+
+        #header img {
+            width: 40%;
+            height: 100%;
+        }
+
+        nav {
+            width: 100%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #header ul li {
+            list-style: none;
+        }
+
+        form {
+            margin-top: 150px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #email {
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+        }
+
+        #submit {
+            background-color: blanchedalmond;
+            width: 150px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: rgb(250, 210, 150);
+        }
+
+        iframe {
+            margin-top: 100px;
+        }
+
+        @media screen and (max-width: 768px) {
+            #header {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <img src="original_trombones.png" alt="" id="header-img">
+        <nav id="nav-bar">
+            <ul>
+                <li><a href="#form" class="nav-link">Form</a></li>
+                <li><a href="#video" class="nav-link">How It Works</a></li>
+                <li><a href="#sec3" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email" required>
+            <input type="submit" id="submit" value="GET STARTED">
+        </form>
+    
+        <iframe id="video" width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+        <div class="pricing" id="sec3">
+            <div class="price1">
+                <header>Premium</header>
+                <h2>500PHP</h2>
+            </div>
+            <div class="price2">
+                <header>Classic</header>
+                <h2>500PHP</h2>
+            </div>
+            <div class="price3">
+                <header>Standard</header>
+                <h2>500PHP</h2>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
